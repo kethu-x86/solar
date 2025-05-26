@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5kW On-Grid Solar Setup Cost in Kerala</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        .container {
+            max-width: 100%;
+            padding: 1rem;
+        }
+        @media (min-width: 640px) {
+            .container {
+                max-width: 90%;
+                padding: 2rem;
+            }
+        }
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 80%;
+                padding: 2rem;
+            }
+        }
+        /* Custom styles for tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb; /* Light gray border */
+        }
+        th {
+            background-color: #e0f2fe; /* Light blue for table headers */
+            font-weight: 600;
+            color: #1e40af; /* Darker blue text */
+        }
+        tr:nth-child(even) {
+            background-color: #f9fafb; /* Slightly darker row for readability */
+        }
+        tr:hover {
+            background-color: #eef2ff; /* Lighter blue on hover */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto p-4 lg:p-8">
+        <header class="bg-blue-600 text-white p-6 rounded-lg shadow-lg mb-8">
+            <h1 class="text-3xl lg:text-4xl font-bold text-center mb-2">5kW On-Grid Solar Setup Cost in Kerala</h1>
+            <p class="text-center text-lg">Your guide to understanding solar investment with government subsidies</p>
+        </header>
+
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold text-blue-700 mb-4">Executive Summary</h2>
+            <p class="mb-4">
+                A 5kW on-grid solar system in Kerala is a smart investment, offering significant electricity bill reductions and environmental benefits.
+                The estimated upfront cost, before subsidies, ranges from <strong class="text-blue-600">₹3,15,000 to ₹3,65,000</strong>.
+                With the Central Financial Assistance (CFA) of <strong class="text-green-600">₹78,000</strong> under the PM Surya Ghar Muft Bijli Yojana,
+                the effective net cost is reduced to an estimated range of <strong class="text-blue-600">₹2,37,000 to ₹2,87,000</strong>.
+            </p>
+            <p class="mb-4">
+                This system is projected to generate substantial bimonthly savings of <strong class="text-green-600">₹9,200 to ₹10,200</strong> on electricity bills,
+                leading to a rapid payback period of typically <strong class="text-blue-600">4 to 8 years</strong>.
+                After this, electricity generated is virtually free for the system's lifespan, which commonly exceeds 25 years.
+            </p>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold text-blue-700 mb-4">Estimated Cost Breakdown (Before Subsidy)</h2>
+            <p class="mb-4">The total estimated cost for installing a 5kW on-grid solar system in Kerala, prior to the application of any government subsidies, generally ranges from ₹3,15,000 to ₹3,65,000.</p>
+
+            <div class="overflow-x-auto rounded-lg border border-gray-200">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Component Category</th>
+                            <th>Estimated Cost Range (INR)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Solar Panels (5kW)</td>
+                            <td>₹1,25,000 – ₹2,00,000</td>
+                        </tr>
+                        <tr>
+                            <td>Inverter</td>
+                            <td>₹30,000 – ₹80,000</td>
+                        </tr>
+                        <tr>
+                            <td>Mounting Structure</td>
+                            <td>₹25,000 – ₹43,000</td>
+                        </tr>
+                        <tr>
+                            <td>Wiring & Other Accessories</td>
+                            <td>₹20,000 – ₹57,000</td>
+                        </tr>
+                        <tr>
+                            <td>Installation Charges</td>
+                            <td>₹10,000 – ₹40,000</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Total Estimated System Cost</td>
+                            <td class="font-bold">₹3,15,000 – ₹3,65,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-6">
+                <canvas id="costBreakdownChart"></canvas>
+            </div>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold text-blue-700 mb-4">Government Subsidies: PM Surya Ghar Muft Bijli Yojana</h2>
+            <p class="mb-4">
+                The PM Surya Ghar Muft Bijli Yojana provides substantial financial assistance. For a 5kW system, the total subsidy is capped at <strong class="text-green-600">₹78,000</strong>.
+            </p>
+
+            <div class="overflow-x-auto rounded-lg border border-gray-200 mb-6">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Solar System Size</th>
+                            <th>Estimated Price Range (Before Subsidy)</th>
+                            <th>Applicable Subsidy</th>
+                            <th>Prices After Subsidy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>5kW On-grid</td>
+                            <td>₹3,15,000 – ₹3,65,000</td>
+                            <td>₹78,000</td>
+                            <td>₹2,37,000 – ₹2,87,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="text-xl font-semibold text-blue-600 mb-3">Detailed Subsidy Structure</h3>
+            <div class="overflow-x-auto rounded-lg border border-gray-200">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rooftop Solar Plant Capacity</th>
+                            <th>Subsidy Amount</th>
+                            <th>Relevant Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Up to 2 kW</td>
+                            <td>₹30,000/kW</td>
+                            <td>40%</td>
+                        </tr>
+                        <tr>
+                            <td>2-3 kW (additional capacity)</td>
+                            <td>₹18,000/kW</td>
+                            <td>20%</td>
+                        </tr>
+                        <tr>
+                            <td>Above 3 kW</td>
+                            <td>Maximum ₹78,000 (capped at 3 kW calculation)</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold text-blue-700 mb-4">Financial Benefits and Return on Investment</h2>
+            <p class="mb-4">
+                A 5kW solar power plant can generate approximately 20-25 units of electricity per day, leading to significant monthly and bimonthly savings.
+            </p>
+
+            <div class="overflow-x-auto rounded-lg border border-gray-200">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ongrid Solar Capacity</th>
+                            <th>Monthly Electricity Generation (units)</th>
+                            <th>Estimated Monthly Savings (INR)</th>
+                            <th>Estimated Bimonthly Savings (INR)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>5 kWp</td>
+                            <td>600-900</td>
+                            <td>₹3,500 – ₹5,000</td>
+                            <td>₹9,200 – ₹10,200</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-6">
+                <canvas id="savingsChart"></canvas>
+            </div>
+
+            <p class="mt-4">
+                The investment typically yields a rapid payback period of <strong class="text-blue-600">4 to 8 years</strong>.
+                After this, electricity generated is essentially free for the lifespan of the panels (25+ years).
+            </p>
+            <p class="mt-2">
+                Net metering allows you to feed excess electricity back into the grid, earning credits. The current settlement rate for net energy banked is <strong class="text-green-600">₹3.15 per unit</strong>.
+            </p>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold text-blue-700 mb-4">Additional Considerations for Installation</h2>
+            <p class="mb-4">Be aware of additional fees and long-term maintenance aspects:</p>
+
+            <div class="overflow-x-auto rounded-lg border border-gray-200">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fee Type</th>
+                            <th>Estimated Cost (INR)</th>
+                            <th>Frequency/Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Feasibility Certificate Application</td>
+                            <td>₹1,000</td>
+                            <td>One-time fee</td>
+                        </tr>
+                        <tr>
+                            <td>Registration Fee (for 5kW)</td>
+                            <td>₹5,000</td>
+                            <td>One-time fee (₹1,000/kW)</td>
+                        </tr>
+                        <tr>
+                            <td>Net Meter Rental (Single Phase)</td>
+                            <td>₹6 + GST</td>
+                            <td>Monthly (plus 9% CGST & 9% SGST)</td>
+                        </tr>
+                        <tr>
+                            <td>Net Meter Rental (Three Phase)</td>
+                            <td>₹15 + GST</td>
+                            <td>Monthly (plus 9% CGST & 9% SGST)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="mt-4">
+                Solar panels typically last 25+ years with low maintenance (periodic cleaning). Empanelled vendors provide 5 years of maintenance as part of the scheme.
+            </p>
+            <p class="mt-2">
+                Kerala aims for 3.5 GW solar capacity by 2030, with mandatory rooftop solar for certain high-consumption categories, indicating strong policy support.
+            </p>
+        </section>
+
+        <footer class="bg-blue-600 text-white p-6 rounded-lg shadow-lg text-center">
+            <p>&copy; 2025 Solar Cost Kerala. All rights reserved.</p>
+            <p class="text-sm mt-2">Disclaimer: All costs are estimates and may vary based on market conditions, vendor, and specific installation requirements. Please consult with certified solar installers for accurate quotes.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Data for charts - using mid-points or representative values for simplicity
+        const costData = {
+            labels: ['Solar Panels', 'Inverter', 'Mounting Structure', 'Wiring & Accessories', 'Installation Charges'],
+            datasets: [{
+                label: 'Estimated Cost Breakdown (INR)',
+                data: [162500, 55000, 34000, 38500, 25000], // Mid-points of the ranges
+                backgroundColor: [
+                    '#3b82f6', // blue-500
+                    '#60a5fa', // blue-400
+                    '#93c5fd', // blue-300
+                    '#bfdbfe', // blue-200
+                    '#dbeafe'  // blue-100
+                ],
+                hoverOffset: 4
+            }]
+        };
+
+        const savingsData = {
+            labels: ['Estimated Monthly Savings', 'Estimated Bimonthly Savings'],
+            datasets: [{
+                label: 'Savings (INR)',
+                data: [4250, 9700], // Mid-points of the ranges
+                backgroundColor: [
+                    '#10b981', // emerald-500
+                    '#34d399'  // emerald-400
+                ],
+                borderColor: [
+                    '#059669', // emerald-600
+                    '#059669'
+                ],
+                borderWidth: 1
+            }]
+        };
+
+        // Chart.js configuration
+        const commonChartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'top',
+                    labels: {
+                        font: {
+                            family: 'Inter'
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            let label = context.label || '';
+                            if (label) {
+                                label += ': ';
+                            }
+                            if (context.parsed !== null) {
+                                label += new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' }).format(context.parsed);
+                            }
+                            return label;
+                        }
+                    },
+                    bodyFont: {
+                        family: 'Inter'
+                    },
+                    titleFont: {
+                        family: 'Inter'
+                    }
+                }
+            }
+        };
+
+        // Render Cost Breakdown Pie Chart
+        const costCtx = document.getElementById('costBreakdownChart').getContext('2d');
+        new Chart(costCtx, {
+            type: 'pie',
+            data: costData,
+            options: {
+                ...commonChartOptions,
+                plugins: {
+                    ...commonChartOptions.plugins,
+                    title: {
+                        display: true,
+                        text: 'Estimated Cost Breakdown (Before Subsidy)',
+                        font: {
+                            size: 18,
+                            family: 'Inter'
+                        },
+                        color: '#1e40af' // blue-800
+                    }
+                }
+            }
+        });
+
+        // Render Savings Bar Chart
+        const savingsCtx = document.getElementById('savingsChart').getContext('2d');
+        new Chart(savingsCtx, {
+            type: 'bar',
+            data: savingsData,
+            options: {
+                ...commonChartOptions,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Amount (INR)',
+                            font: {
+                                family: 'Inter'
+                            }
+                        },
+                        ticks: {
+                            callback: function(value) {
+                                return new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' }).format(value);
+                            },
+                            font: {
+                                family: 'Inter'
+                            }
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            font: {
+                                family: 'Inter'
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    ...commonChartOptions.plugins,
+                    title: {
+                        display: true,
+                        text: 'Estimated Electricity Bill Savings',
+                        font: {
+                            size: 18,
+                            family: 'Inter'
+                        },
+                        color: '#1e40af' // blue-800
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
